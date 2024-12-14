@@ -1,0 +1,9 @@
+library list:
+- numpy
+- os
+- cv2
+- pandas
+- pickle
+- mxnet==1.9.1
+- drive from google.colab
+- cv2_imshow from google.colab.patches
