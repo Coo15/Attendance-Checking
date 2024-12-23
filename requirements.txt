@@ -3,7 +3,11 @@ library list:
 - os
 - cv2
 - pandas
-- pickle
-- mxnet==1.9.1
+- gdown
+- time
+- accuracy_score from sklearn.metrics
+- OpenCV from deepface.models.face_detection
+- MtCnn from deepface.models.face_detection
+- Yolo from deepface.models.face_detection
 - drive from google.colab
 - cv2_imshow from google.colab.patches
