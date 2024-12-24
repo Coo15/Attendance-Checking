@@ -11,7 +11,7 @@ class FaceRecognitionApp:
     def __init__(self, root):
         self.root = root
         self.root.title("2D Face Recognition System")
-        self.root.geometry("1200x900")
+        self.root.geometry("1000x800")
         
         # Camera and recognition state
         self.running = False
@@ -38,19 +38,19 @@ class FaceRecognitionApp:
         self.controls_frame.pack()
 
         # Start button
-        self.start_button = tk.Button(self.controls_frame, text="Start", command=self.toggle_start, width=10, height=2)
+        self.start_button = tk.Button(self.controls_frame, text="Start", command=self.toggle_start, width=12, height=3)
         self.start_button.pack(side=tk.LEFT, padx=20)
 
         # Capture button
-        self.capture_button = tk.Button(self.controls_frame, text="Capture", command=self.capture, width=10, height=2, state=tk.DISABLED)
+        self.capture_button = tk.Button(self.controls_frame, text="Capture", command=self.capture, width=12, height=3, state=tk.DISABLED)
         self.capture_button.pack(side=tk.LEFT, padx=20)
 
         # Add Student button
-        self.add_student_button = tk.Button(self.controls_frame, text="Add Student", command=self.add_student, width=12, height=2)
+        self.add_student_button = tk.Button(self.controls_frame, text="Add Student", command=self.add_student, width=12, height=3)
         self.add_student_button.pack(side=tk.LEFT, padx=20)
 
         # Log area
-        self.log_text = Text(self.controls_frame, height=6, width=80)
+        self.log_text = Text(self.controls_frame, height=4, width=80)
         self.log_text.pack(side=tk.LEFT, padx=20)
 
     def toggle_start(self):
